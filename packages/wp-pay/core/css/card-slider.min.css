@@ -1,0 +1,174 @@
+@charset "UTF-8";
+.pp-card-slider-container *,
+.pp-new-payment-method-container * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.pp-card-slider-container input[type=submit],
+.pp-card-slider-container select,
+.pp-new-payment-method-container input[type=submit],
+.pp-new-payment-method-container select {
+  padding: 10px;
+}
+.pp-card-slider-wrapper,
+.pp-new-payment-method-wrapper {
+  background: #fff;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  color: #333;
+  max-width: 600px;
+  margin: 3em auto 0;
+  padding: 40px;
+}
+.pp-card-slider {
+  margin: 0 -40px;
+}
+.pp-card-container {
+  max-width: 600px;
+}
+.pp-card-container * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.pp-card {
+  background: #000; /* Original background color */
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: sans-serif;
+  margin: 0;
+  padding-top: 56.25%;
+  overflow: hidden;
+  position: relative;
+}
+.pp-card .pp-card__content {
+  color: #fff;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 0;
+  padding: 8%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* Replace background images with blue background */
+.pp-card .pp-card__background {
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.pp-card .brand-american-express .pp-card__background,
+.pp-card .brand-carta-si .pp-card__background,
+.pp-card .brand-carte-bleue .pp-card__background,
+.pp-card .brand-dankort .pp-card__background,
+.pp-card .brand-diners-club .pp-card__background,
+.pp-card .brand-discover .pp-card__background,
+.pp-card .brand-jcb .pp-card__background,
+.pp-card .brand-maestro .pp-card__background,
+.pp-card .brand-mastercard .pp-card__background,
+.pp-card .brand-unionpay .pp-card__background,
+.pp-card .brand-visa .pp-card__background,
+.pp-card .brand-abn-amro .pp-card__background,
+.pp-card .brand-asn-bank .pp-card__background,
+.pp-card .brand-bunq .pp-card__background,
+.pp-card .brand-handelsbanken .pp-card__background,
+.pp-card .brand-ing .pp-card__background,
+.pp-card .brand-knab .pp-card__background,
+.pp-card .brand-moneyou .pp-card__background,
+.pp-card .brand-rabobank .pp-card__background,
+.pp-card .brand-regiobank .pp-card__background,
+.pp-card .brand-sns .pp-card__background,
+.pp-card .brand-triodos-bank .pp-card__background,
+.pp-card .brand-van-lanschot .pp-card__background {
+  background: blue; /* Change background to blue */
+}
+
+.pp-card .pp-card__logo {
+  margin: 0;
+  padding: 0;
+}
+.pp-card .pp-card__logo img {
+  max-width: 20%;
+  height: auto;
+}
+.slick-slide {
+  padding: 0 15px;
+  outline: none;
+}
+.slick-slide.slick-current .pt-card__indicator {
+  opacity: 1;
+}
+.slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  list-style: none;
+  margin: 30px 0 0;
+  padding: 0;
+}
+.slick-dots li {
+  margin: 0 5px;
+  position: relative;
+}
+.slick-dots li,
+.slick-dots li button {
+  cursor: pointer;
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+.slick-dots li button {
+  background: transparent;
+  border: 0;
+  color: transparent;
+  font-size: 0;
+  line-height: 0;
+  outline: none;
+  padding: 5px;
+}
+.slick-dots li button:before {
+  color: #f9461c;
+  content: "•";
+  font-size: 20px;
+  line-height: 20px;
+  opacity: 0.25;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+}
+.slick-dots li button:focus,
+.slick-dots li button:hover {
+  outline: none;
+}
+.slick-dots li button:focus:before,
+.slick-dots li button:hover:before {
+  opacity: 1;
+}
+.slick-dots li.slick-active button:before {
+  color: #f9461c;
+  opacity: 1;
+}
